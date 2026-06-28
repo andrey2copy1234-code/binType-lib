@@ -31,6 +31,7 @@ class MyBinStruct(BigStructure):
 | `Any` | любой python тип | всё |
 | `Status` | тип статуса | 0-255 статусов |
 | `BigStructure` | пользовательский тип (который мы объявляли) | всё |
+
 Когда вы написали всё типы которые хранит внутри себя MyBinStruct можно создать объект MyBinStruct заполнить его данными вызвать to_bytes и сохранить выданные байты в файл:
 ```python
 with open("MyBinStruct.bin", 'wb') as f:
